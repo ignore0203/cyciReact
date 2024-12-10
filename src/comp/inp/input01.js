@@ -7,8 +7,10 @@ export default function InputStudy() {
     const navigate = useNavigate();
 
     function send() {
+
         localStorage.setItem('study', inp);
         navigate('/oup1');
+
     }
 
     return (
