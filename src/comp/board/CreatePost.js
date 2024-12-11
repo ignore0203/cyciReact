@@ -17,9 +17,12 @@ const CreatePost = () => {
       content : content
     };
 
-    boartRegist(newPost);
-
+    const result = boartRegist(newPost);
+    result.then(res => {
+      console.log(res);
+      
     navigate('/bulletin-board');
+    })
   };
 
   return (

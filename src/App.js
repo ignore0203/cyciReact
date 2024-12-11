@@ -18,6 +18,8 @@ import EditPost from './comp/board/EditPost';
 
 import Ax1 from './comp/ax/ax01'
 
+import Red01 from './comp/red/Red01'
+
 function App() {
   return (
     <div className="App">
@@ -42,6 +44,8 @@ function App() {
           <Route path="/create-post" element={<CreatePost />} />
           <Route path="/post/:id" element={<PostDetail />} /> {/* View full post */}
           <Route path="/edit-post/:id" element={<EditPost />} /> {/* Edit post */}
+
+          <Route path={"/red01"} element={<Red01 />} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -76,7 +80,9 @@ function Home() {
       <Link to="/login">로그인</Link>
       <Link to="/itemList">아이템 리스트</Link><br/>
 
-      <Link to="/bulletin-board">게시판 이동</Link>
+      <Link to="/bulletin-board">게시판 이동</Link><br/>
+
+      <Link to="/red01">리듀서 01</Link>
     </div>
   )
 }
