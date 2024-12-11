@@ -19,6 +19,7 @@ import EditPost from './comp/board/EditPost';
 import Ax1 from './comp/ax/ax01'
 
 import Red01 from './comp/red/Red01'
+import Red02 from './comp/red/Red02'
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route path="/edit-post/:id" element={<EditPost />} /> {/* Edit post */}
 
           <Route path={"/red01"} element={<Red01 />} />
+          <Route path={"/red02"} element={<Red02 />} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -82,7 +84,8 @@ function Home() {
 
       <Link to="/bulletin-board">게시판 이동</Link><br/>
 
-      <Link to="/red01">리듀서 01</Link>
+      <Link to="/red01">리듀서 01</Link><br/>
+      <Link to="/red02">리듀서 02</Link>
     </div>
   )
 }
